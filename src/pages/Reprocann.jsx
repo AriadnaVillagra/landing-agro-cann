@@ -21,7 +21,7 @@ export default function Reprocann() {
           <h1 className={styles.tituloReprocann}>REPROCANN:</h1>
           <p className={styles.paragraph}>
             EL REPROCANN ES UNA POLÍTICA DEL ESTADO ARGENTINO PUESTA EN MARCHA EN 2021 A TRAVÉS DE LA NUEVA REGLAMENTACIÓN
-            <a className={styles.link} onClick={handleRegulationClick}>(REG 883/2020)</a>
+            <a className={styles.link} onClick={handleRegulationClick}> (REG 883/2020) </a>
             DE LA LEY DE CANNABIS MEDICINAL <a className={styles.link} onClick={handleRegulationClick2}>(27350)</a> SANCIONADA EN 2017.
             RECONOCE EL DERECHO A LA SALUD INTEGRAL, AL AUTOCULTIVO, AL CULTIVO SOLIDARIO, AL TRANSPORTE CONTROLADO y
             permite los proyectos de investigación médica y científica sobre cannabis EN TODAS LAS PROVINCIAS DEL TERRITORIO NACIONAL.

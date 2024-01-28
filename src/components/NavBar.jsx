@@ -8,7 +8,7 @@ const NavBar = () => {
   };
 
   return (
-    <header className={styles.Nav}>
+    <div className={styles.Nav}>
       <div className={styles['navbar-buttons']}>
         <ul>
           <a className={styles['nav-button1']} onClick={() => handleButtonClick('/')}>Home</a>
@@ -29,9 +29,8 @@ const NavBar = () => {
           <a className={styles['nav-button6']} onClick={() => handleButtonClick('/Contacto')}>Contacto</a>
         </ul>
       </div>
-    </header>
+    </div>
   );
 };
 
 export default NavBar;
-

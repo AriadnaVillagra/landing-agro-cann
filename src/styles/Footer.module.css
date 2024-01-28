@@ -1,0 +1,70 @@
+.footerStyle {
+  background: #cde242;
+  height: 300px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #000;
+  border-right: 7px solid #080606;
+  /* Borde izquierdo similar al fondo */
+  border-bottom: 7px solid #080606;
+  border-radius: 100px;
+  /* Bordes redondeados */
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.columnContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 10px; /* Agregado para ajustar el espacio entre las columnas */
+}
+
+.logoSection {
+  margin-right: 20px;
+}
+
+.contactInfo {
+  margin: 0;
+  font-size: 24px;
+  color: #000;
+  text-decoration: none;
+}
+
+.contactEmail {
+  margin: 0;
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+}
+
+.emailLogo {
+  width: 33px;
+  height: auto;
+  margin-left: 10px;
+}
+
+.instagramLogo {
+  width: 25px;
+  height: auto;
+  margin-left: 12px;
+}
