@@ -14,7 +14,7 @@
   flex-shrink: 0;
   border-radius: 15px;
   border: 3px solid #000;
-  background: #C7BBED;
+  background: #AF27F7;
   /* Sombra Neobrutalism */
   box-shadow: 5px 4px 0px 0px #000;
   padding-left: 20px;
@@ -24,7 +24,7 @@
 }
 
 .paragraph {
-  color: #2A8500;
+  color: #6FF727;
   font-family: Antonio;
   font-size: 24px;
   font-style: normal;
@@ -38,7 +38,7 @@
 }
 
 .tituloReprocann {
-color: #2A8500;
+color: #6FF727;
 font-family: Antonio;
 font-size: 48px;
 font-style: normal;
@@ -49,13 +49,13 @@ line-height: normal;
 
 
 .link {
-  color: #007bff; /* Color de enlace estándar */
+  color: #4627f7a8; /* Color de enlace estándar */
   cursor: pointer; /* Cambia el cursor al pasar por encima */
   text-decoration: underline; /* Agrega subrayado para indicar que es un enlace */
 }
 
 .link:hover {
-  color: #0056b3; /* Cambia el color cuando se pasa el mouse por encima */
+  color: #b6aafca8; /* Cambia el color cuando se pasa el mouse por encima */
 }
 
 

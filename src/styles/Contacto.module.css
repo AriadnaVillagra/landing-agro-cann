@@ -17,7 +17,7 @@
   padding: 20px;
   border: 3px solid #000;
   border-radius: var(--border-radius);
-  background: #F74727;
+  background: #F72731;
   transition: background 200ms, border 200ms;
 }
 

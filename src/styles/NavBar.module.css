@@ -23,7 +23,7 @@
   height: 42px;
   flex-shrink: 0;
   margin-left: 12px;
-  background-color: #C3A1BD;
+  background-color: #FE007F;
   border: 3px solid #000000;
   /* Ajusta el grosor del borde */
   border-radius: 15px;
@@ -43,11 +43,12 @@
 }
 
 .nav-button2 {
+  /*Como te ayudamos*/
   width: 124px;
   height: 42px;
   flex-shrink: 0;
   margin-left: 12px;
-  background-color: #9EAAAC;
+  background-color: #FE9800;
   border: 3px solid #000000;
   /* Ajusta el grosor del borde */
   border-radius: 15px;
@@ -67,11 +68,12 @@
 }
 
 .nav-button3 {
+  /*Reprocann*/
   width: 124px;
   height: 42px;
   flex-shrink: 0;
   margin-left: 12px;
-  background-color: #4BFDC1;
+  background-color: #00FE7F;
   border: 3px solid #000000;
   /* Ajusta el grosor del borde */
   border-radius: 15px;
@@ -97,11 +99,12 @@
 }
 
 .nav-button4 {
+   /*Club Cannabico*/
   width: 124px;
   height: 42px;
   flex-shrink: 0;
   margin-left: 12px;
-  background-color: #8D9FFF;
+  background-color: #9800FE;
   border: 3px solid #000000;
   /* Ajusta el grosor del borde */
   border-radius: 15px;
@@ -121,11 +124,12 @@
 }
 
 .nav-button5 {
+   /*Nosotros*/
   width: 124px;
   height: 42px;
   flex-shrink: 0;
   margin-left: 12px;
-  background-color: #2A8CD8;
+  background-color: #00FEFE;
   border: 3px solid #000000;
   /* Ajusta el grosor del borde */
   border-radius: 15px;
@@ -144,24 +148,6 @@
   transform: scale(1.1); /* Agranda el botón en un 10% cuando se pasa el mouse */
 }
 
-.nav-button6 {
-  width: 124px;
-  height: 42px;
-  flex-shrink: 0;
-  margin-left: 12px;
-  background-color: #8BCDCD;
-  border: 3px solid #000000;
-  /* Ajusta el grosor del borde */
-  border-radius: 15px;
-  /* Ajusta el radio del borde */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* Sombra Neobrutalism */
-  box-shadow: 5px 4px 0px 0px #000000;
-  transition: transform 0.3s ease; 
-  cursor: pointer;
-}
 
 .nav-button6:hover {
   background-color: #ffffff;

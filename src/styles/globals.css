@@ -8,7 +8,7 @@ body, html {
 
 /* Aplica el background directamente al body */
 body {
-  background-image: url('/Wallpaper.png'); /* Ruta a la imagen JPG en la carpeta public */
+  background-image: url('/background.jpg'); /* Ruta a la imagen JPG en la carpeta public */
   background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
   background-repeat: no-repeat; /* Evita que la imagen se repita en el fondo */
 }
