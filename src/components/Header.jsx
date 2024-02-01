@@ -15,7 +15,7 @@ const Header = () => {
       
         {/* Centra el título */}
         <div className={styles.centeredTitle}>
-          <Image src="/TITULO.png" className={styles.logo} width={640} height={140} />
+          <Image src="/titulo2.png" className={styles.logo} width={900} height={200} />
         </div>
       </div>
       <NavBar />
