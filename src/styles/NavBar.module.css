@@ -148,6 +148,25 @@
   transform: scale(1.1); /* Agranda el botón en un 10% cuando se pasa el mouse */
 }
 
+.nav-button6 {
+  /*Nosotros*/
+ width: 124px;
+ height: 42px;
+ flex-shrink: 0;
+ margin-left: 12px;
+ background-color: #27F747;
+ border: 3px solid #000000;
+ /* Ajusta el grosor del borde */
+ border-radius: 15px;
+ /* Ajusta el radio del borde */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ /* Sombra Neobrutalism */
+ box-shadow: 5px 4px 0px 0px #000000;
+ transition: transform 0.3s ease; 
+ cursor: pointer;
+}
 
 .nav-button6:hover {
   background-color: #ffffff;
