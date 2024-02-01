@@ -4,13 +4,14 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../styles/globals.css';
 
-
 function App({ Component, pageProps }) {
   return (
-    <div> {/* Utiliza un elemento contenedor válido aquí */}
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       <Header />
-      <Component {...pageProps} />
-      <Footer />
+      <div style={{ flex: '1' }}> {/* Este div se expandirá para ocupar todo el espacio restante */}
+        <Component {...pageProps} />
+      </div>
+      <Footer style={{ marginTop: 'auto' }} />
     </div>
   );
 }

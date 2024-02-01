@@ -1,5 +1,6 @@
 /* navbar.module.css */
 .Nav {
+  list-style: none;
   display: flex;
   justify-content: space-between;
   top: 0;
@@ -10,6 +11,7 @@
 }
 
 .navbar-buttons {
+  list-style: none;
   display: flex;
   align-items: center;
   width: 100%;
@@ -17,159 +19,72 @@
   /* Ajusta el margen superior para mover el NavBar más abajo */
 }
 
-.nav-button1 {
-  /*Home*/
-  width: 124px;
-  height: 42px;
-  flex-shrink: 0;
+.navbar-buttons li {
   margin-left: 12px;
-  background-color: #C3A1BD;
-  border: 3px solid #000000;
-  /* Ajusta el grosor del borde */
-  border-radius: 15px;
-  /* Ajusta el radio del borde */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* Sombra Neobrutalism */
-  box-shadow: 5px 4px 0px 0px #000000;
-  transition: transform 0.3s ease; 
-  cursor: pointer;
 }
 
-.nav-button1:hover {
-  background-color: #ffffff;
-  transform: scale(1.1); /* Agranda el botón en un 10% cuando se pasa el mouse */
-}
-
-.nav-button2 {
-  width: 124px;
-  height: 42px;
-  flex-shrink: 0;
-  margin-left: 12px;
-  background-color: #9EAAAC;
-  border: 3px solid #000000;
-  /* Ajusta el grosor del borde */
-  border-radius: 15px;
-  /* Ajusta el radio del borde */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* Sombra Neobrutalism */
-  box-shadow: 5px 4px 0px 0px #000000;
-  transition: transform 0.3s ease; 
-  cursor: pointer;
-}
-
-.nav-button2:hover {
-  background-color: #ffffff;
-  transform: scale(1.1); /* Agranda el botón en un 10% cuando se pasa el mouse */
-}
-
-.nav-button3 {
-  width: 124px;
-  height: 42px;
-  flex-shrink: 0;
-  margin-left: 12px;
-  background-color: #4BFDC1;
-  border: 3px solid #000000;
-  /* Ajusta el grosor del borde */
-  border-radius: 15px;
-  /* Ajusta el radio del borde */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* Sombra Neobrutalism */
-  box-shadow: 5px 4px 0px 0px #000000;
-
-  /* Estilos de fuente */
-  font-family: 'Antonio', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 25.88px;
-  transition: transform 0.3s ease; 
-  cursor: pointer;
-}
-
-.nav-button3:hover {
-  background-color: #ffffff;
-  transform: scale(1.1); /* Agranda el botón en un 10% cuando se pasa el mouse */
-}
-
-.nav-button4 {
-  width: 124px;
-  height: 42px;
-  flex-shrink: 0;
-  margin-left: 12px;
-  background-color: #8D9FFF;
-  border: 3px solid #000000;
-  /* Ajusta el grosor del borde */
-  border-radius: 15px;
-  /* Ajusta el radio del borde */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* Sombra Neobrutalism */
-  box-shadow: 5px 4px 0px 0px #000000;
-  transition: transform 0.3s ease; 
-  cursor: pointer;
-}
-
-.nav-button4:hover {
-  background-color: #ffffff;
-  transform: scale(1.1); /* Agranda el botón en un 10% cuando se pasa el mouse */
-}
-
-.nav-button5 {
-  width: 124px;
-  height: 42px;
-  flex-shrink: 0;
-  margin-left: 12px;
-  background-color: #2A8CD8;
-  border: 3px solid #000000;
-  /* Ajusta el grosor del borde */
-  border-radius: 15px;
-  /* Ajusta el radio del borde */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* Sombra Neobrutalism */
-  box-shadow: 5px 4px 0px 0px #000000;
-  transition: transform 0.3s ease; 
-  cursor: pointer;
-}
-
-.nav-button5:hover {
-  background-color: #ffffff;
-  transform: scale(1.1); /* Agranda el botón en un 10% cuando se pasa el mouse */
-}
-
+/* Estilos específicos para cada botón */
+.nav-button1,
+.nav-button2,
+.nav-button3,
+.nav-button4,
+.nav-button5,
 .nav-button6 {
   width: 124px;
   height: 42px;
   flex-shrink: 0;
-  margin-left: 12px;
-  background-color: #8BCDCD;
+  background-color: #FE007F;
   border: 3px solid #000000;
-  /* Ajusta el grosor del borde */
   border-radius: 15px;
-  /* Ajusta el radio del borde */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Sombra Neobrutalism */
   box-shadow: 5px 4px 0px 0px #000000;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
   cursor: pointer;
 }
 
+/* Estilos específicos para cada botón al pasar el mouse */
+.nav-button1:hover,
+.nav-button2:hover,
+.nav-button3:hover,
+.nav-button4:hover,
+.nav-button5:hover,
 .nav-button6:hover {
   background-color: #ffffff;
-  transform: scale(1.1); /* Agranda el botón en un 10% cuando se pasa el mouse */
+  transform: scale(1.1);
 }
 
+/* Estilos específicos para cada botón */
+.nav-button2 {
+  background-color: #FE9800;
+}
 
+.nav-button3 {
+  background-color: #00FE7F;
+  font-family: 'Antonio', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25.88px;
+}
 
+.nav-button4 {
+  background-color: #9800FE;
+}
+
+.nav-button5 {
+  background-color: #00FEFE;
+}
+
+.nav-button6 {
+  background-color: #27F747;
+}
+
+/* Estilos específicos para cada botón al pasar el mouse */
+.nav-button6:hover {
+  background-color: #ffffff;
+  transform: scale(1.1);
+}
 
 /* Estilos para la versión móvil (max-width: 640px) */
 @media (max-width: 640px) {

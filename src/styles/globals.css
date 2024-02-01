@@ -1,24 +1,22 @@
 /* globals.css */
 body, html {
-  margin: 5;
+  margin: 0;
   padding: 0;
   overflow-y: auto; /* Habilita el scroll vertical en todas las páginas */
   overflow-x: hidden;
+  height: 100%; /* Asegura que el cuerpo y el html ocupen el 100% de la altura */
 }
 
-/* Aplica el background directamente al body */
 body {
-  background-image: url('/Wallpaper.png'); /* Ruta a la imagen JPG en la carpeta public */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el cuerpo ocupa al menos el 100% de la altura de la ventana */
+  background-image: url('/background.jpg'); /* Ruta a la imagen JPG en la carpeta public */
   background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
   background-repeat: no-repeat; /* Evita que la imagen se repita en el fondo */
-}
-
-/* Resto de estilos usando la fuente */
-@font-face {
-  font-family: 'Antonio'; /* Nombre que asignarás a tu fuente */
-  src: url('/Antonio.ttf') format('truetype'); /* Ruta relativa al archivo TTF */
-}
-
-body {
   font-family: 'Antonio', sans-serif; /* Utiliza el nombre que asignaste a tu fuente */
+}
+
+#__next {
+  flex: 1; /* Este div se expandirá para ocupar todo el espacio restante */
 }
