@@ -8,28 +8,28 @@ const NavBar = () => {
   };
 
   return (
-    <div className={styles.Nav}>
-      <div className={styles['navbar-buttons']}>
-        <ul>
+    <nav className={styles.Nav}>
+      <ul className={styles['navbar-buttons']}>
+        <li>
           <a className={styles['nav-button1']} onClick={() => handleButtonClick('/')}>Home</a>
-        </ul>
-        <ul>
+        </li>
+        <li>
           <a className={styles['nav-button2']} onClick={() => handleButtonClick('/ComoTeAyudamos')}>Como te ayudamos</a>
-        </ul>
-        <ul>
+        </li>
+        <li>
           <a className={styles['nav-button3']} onClick={() => handleButtonClick('/Reprocann')}>Reprocann</a>
-        </ul>
-        <ul>
+        </li>
+        <li>
           <a className={styles['nav-button4']} onClick={() => handleButtonClick('/ClubCannabico')}>Club Cannabico</a>
-        </ul>
-        <ul>
+        </li>
+        <li>
           <a className={styles['nav-button5']} onClick={() => handleButtonClick('/Nosotros')}>Nosotros</a>
-        </ul>
-        <ul>
+        </li>
+        <li>
           <a className={styles['nav-button6']} onClick={() => handleButtonClick('/Contacto')}>Contacto</a>
-        </ul>
-      </div>
-    </div>
+        </li>
+      </ul>
+    </nav>
   );
 };
 

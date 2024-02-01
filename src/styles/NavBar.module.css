@@ -1,5 +1,6 @@
 /* navbar.module.css */
 .Nav {
+  list-style: none;
   display: flex;
   justify-content: space-between;
   top: 0;
@@ -10,6 +11,7 @@
 }
 
 .navbar-buttons {
+  list-style: none;
   display: flex;
   align-items: center;
   width: 100%;
@@ -17,164 +19,72 @@
   /* Ajusta el margen superior para mover el NavBar más abajo */
 }
 
-.nav-button1 {
-  /*Home*/
+.navbar-buttons li {
+  margin-left: 12px;
+}
+
+/* Estilos específicos para cada botón */
+.nav-button1,
+.nav-button2,
+.nav-button3,
+.nav-button4,
+.nav-button5,
+.nav-button6 {
   width: 124px;
   height: 42px;
   flex-shrink: 0;
-  margin-left: 12px;
   background-color: #FE007F;
   border: 3px solid #000000;
-  /* Ajusta el grosor del borde */
   border-radius: 15px;
-  /* Ajusta el radio del borde */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Sombra Neobrutalism */
   box-shadow: 5px 4px 0px 0px #000000;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
   cursor: pointer;
 }
 
-.nav-button1:hover {
+/* Estilos específicos para cada botón al pasar el mouse */
+.nav-button1:hover,
+.nav-button2:hover,
+.nav-button3:hover,
+.nav-button4:hover,
+.nav-button5:hover,
+.nav-button6:hover {
   background-color: #ffffff;
-  transform: scale(1.1); /* Agranda el botón en un 10% cuando se pasa el mouse */
+  transform: scale(1.1);
 }
 
+/* Estilos específicos para cada botón */
 .nav-button2 {
-  /*Como te ayudamos*/
-  width: 124px;
-  height: 42px;
-  flex-shrink: 0;
-  margin-left: 12px;
   background-color: #FE9800;
-  border: 3px solid #000000;
-  /* Ajusta el grosor del borde */
-  border-radius: 15px;
-  /* Ajusta el radio del borde */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* Sombra Neobrutalism */
-  box-shadow: 5px 4px 0px 0px #000000;
-  transition: transform 0.3s ease; 
-  cursor: pointer;
-}
-
-.nav-button2:hover {
-  background-color: #ffffff;
-  transform: scale(1.1); /* Agranda el botón en un 10% cuando se pasa el mouse */
 }
 
 .nav-button3 {
-  /*Reprocann*/
-  width: 124px;
-  height: 42px;
-  flex-shrink: 0;
-  margin-left: 12px;
   background-color: #00FE7F;
-  border: 3px solid #000000;
-  /* Ajusta el grosor del borde */
-  border-radius: 15px;
-  /* Ajusta el radio del borde */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* Sombra Neobrutalism */
-  box-shadow: 5px 4px 0px 0px #000000;
-
-  /* Estilos de fuente */
   font-family: 'Antonio', sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 25.88px;
-  transition: transform 0.3s ease; 
-  cursor: pointer;
-}
-
-.nav-button3:hover {
-  background-color: #ffffff;
-  transform: scale(1.1); /* Agranda el botón en un 10% cuando se pasa el mouse */
 }
 
 .nav-button4 {
-   /*Club Cannabico*/
-  width: 124px;
-  height: 42px;
-  flex-shrink: 0;
-  margin-left: 12px;
   background-color: #9800FE;
-  border: 3px solid #000000;
-  /* Ajusta el grosor del borde */
-  border-radius: 15px;
-  /* Ajusta el radio del borde */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* Sombra Neobrutalism */
-  box-shadow: 5px 4px 0px 0px #000000;
-  transition: transform 0.3s ease; 
-  cursor: pointer;
-}
-
-.nav-button4:hover {
-  background-color: #ffffff;
-  transform: scale(1.1); /* Agranda el botón en un 10% cuando se pasa el mouse */
 }
 
 .nav-button5 {
-   /*Nosotros*/
-  width: 124px;
-  height: 42px;
-  flex-shrink: 0;
-  margin-left: 12px;
   background-color: #00FEFE;
-  border: 3px solid #000000;
-  /* Ajusta el grosor del borde */
-  border-radius: 15px;
-  /* Ajusta el radio del borde */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* Sombra Neobrutalism */
-  box-shadow: 5px 4px 0px 0px #000000;
-  transition: transform 0.3s ease; 
-  cursor: pointer;
-}
-
-.nav-button5:hover {
-  background-color: #ffffff;
-  transform: scale(1.1); /* Agranda el botón en un 10% cuando se pasa el mouse */
 }
 
 .nav-button6 {
-  /*Nosotros*/
- width: 124px;
- height: 42px;
- flex-shrink: 0;
- margin-left: 12px;
- background-color: #27F747;
- border: 3px solid #000000;
- /* Ajusta el grosor del borde */
- border-radius: 15px;
- /* Ajusta el radio del borde */
- display: flex;
- justify-content: center;
- align-items: center;
- /* Sombra Neobrutalism */
- box-shadow: 5px 4px 0px 0px #000000;
- transition: transform 0.3s ease; 
- cursor: pointer;
+  background-color: #27F747;
 }
 
+/* Estilos específicos para cada botón al pasar el mouse */
 .nav-button6:hover {
   background-color: #ffffff;
-  transform: scale(1.1); /* Agranda el botón en un 10% cuando se pasa el mouse */
+  transform: scale(1.1);
 }
-
-
-
 
 /* Estilos para la versión móvil (max-width: 640px) */
 @media (max-width: 640px) {
