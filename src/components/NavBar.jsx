@@ -1,6 +1,6 @@
 // src/components/NavBar.jsx
 import React from 'react';
-import styles from '../styles/navbar.module.css';
+import styles from '@component/styles/Navbar.module.css'; // Usa la ruta correcta
 
 const NavBar = () => {
   const handleButtonClick = (route) => {

@@ -1,7 +1,7 @@
 // src/components/Header.jsx
 import React from 'react';
 import Image from 'next/image';
-import styles from '../styles/header.module.css'; // Ajusta la ruta según la ubicación de tu archivo header.module.css
+import styles from '@component/styles/Header.module.css'; // Usa la ruta correcta
 import NavBar from './NavBar';
 
 const Header = () => {
