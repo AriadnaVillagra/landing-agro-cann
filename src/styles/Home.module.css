@@ -7,35 +7,25 @@
   min-height: 100vh;
 }
 
-
 /* Mobile */
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .content {
-    padding: 4rem;
+    padding: 1rem; /* Ajusta el padding según sea necesario */
   }
 
   .grid {
     grid-template-columns: 1fr;
-    margin-bottom: 120px;
-    max-width: 320px;
+    margin-bottom: 20px; /* Reducción del margen */
+    max-width: 100%; /* Ajusta el ancho máximo */
     text-align: center;
   }
 
   .card {
-    padding: 1rem 2.5rem;
-  }
-
-  .card h2 {
-    margin-bottom: 0.5rem;
+    padding: 0.5rem; /* Ajusta el padding según sea necesario */
   }
 
   .center {
-    padding: 8rem 0 6rem;
-  }
-
-  .center::before {
-    transform: none;
-    height: 300px;
+    padding: 4rem 0 2rem; /* Ajusta el padding según sea necesario */
   }
 
   .description {
@@ -43,54 +33,18 @@
   }
 
   .description a {
-    padding: 1rem;
-  }
-
-  .description p,
-  .description div {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-  }
-
-  .description p {
-    align-items: center;
-    inset: 0 0 auto;
-    padding: 2rem 1rem 1.4rem;
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
-    background: linear-gradient(
-      to bottom,
-      rgba(var(--background-start-rgb), 1),
-      rgba(var(--callout-rgb), 0.5)
-    );
-    background-clip: padding-box;
-    backdrop-filter: blur(24px);
-  }
-
-  .description div {
-    align-items: flex-end;
-    pointer-events: none;
-    inset: auto 0 0;
-    padding: 2rem;
-    height: 200px;
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      rgb(var(--background-end-rgb)) 40%
-    );
-    z-index: 1;
+    padding: 0.5rem; /* Ajusta el padding según sea necesario */
   }
 }
 
-/* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
+/* Tablet y Desktop Pequeñas */
+@media (min-width: 601px) and (max-width: 1120px) {
   .grid {
     grid-template-columns: repeat(2, 50%);
   }
 }
+
+/* Ajustes adicionales según tus necesidades */
 
 @media (prefers-color-scheme: dark) {
   .vercelLogo {

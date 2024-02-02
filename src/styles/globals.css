@@ -20,3 +20,17 @@ body {
 #__next {
   flex: 1; /* Este div se expandirá para ocupar todo el espacio restante */
 }
+
+/* Estilos generales para pantallas más grandes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilos específicos para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px; /* O ajusta el padding según sea necesario */
+  }
+}
