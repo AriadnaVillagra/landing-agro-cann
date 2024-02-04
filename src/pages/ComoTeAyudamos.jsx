@@ -11,10 +11,10 @@ export default function ComoTeAyudamos() {
   return (
     <>
       <Head>
-        <title>Como Te Ayudamos - Club Cannabico</title>
+        <title>Como Te Ayudamos</title>
         <meta name="description" content="Servicios de Club Cannabico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo-final-white.png" />
       </Head>
       <main className={`${styles.main} ${styles.comoTeAyudamosSection}`}>
         <div className={styles.recuadro1}>
