@@ -7,10 +7,13 @@ const inter = Inter({ subsets: ['latin'] });
 
 export default function Nosotros() {
   return (
-    <>
-      <Head>
-        <title>Nosotros</title>
-      </Head>
+    
+    <> <Head>
+      <title>Nosotros</title>
+      <meta name="description" content="Servicios de Club Cannabico" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="icon" href="/logo-final-white.png" />
+    </Head>
       <main className={styles.main}>
         <div className={styles.container}>
           <h1 className={styles.tituloReprocann}>Personería Jurídica</h1>

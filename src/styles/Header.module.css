@@ -131,10 +131,32 @@
 
   /* Ajustes para la flecha */
   .logoFlecha {
+    width: 10%;
+    height: 10%;
     margin-top: 0; /* Elimina el margen superior */
     margin-left: 0; /* Elimina el margen izquierdo */
     position: static; /* Cambia la posición a estática para seguir el flujo del documento */
   }
+
+  .logoFlecha:hover {
+    transform: translateX(10px); /* Desplaza la flecha 10px hacia la derecha */
+  }
+
+  .login {
+    position: absolute;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    left: 9rem;
+    top: 5rem;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .login:hover {
+    animation: blink 1s infinite; /* Aplica la animación solo cuando el mouse está sobre el botón */
+  }
+  
 
   .centeredTitle {
     padding-right: 100px;
@@ -145,8 +167,18 @@
   }
 
   /* Ajustes para HeaderDeco2 */
-  .deco2 {
+  .deco2 {   
+    top: auto; /* Elimina la posición superior automática */
+    left: 250px;
+    right: 100px; /* Ajusta la posición derecha a 10px */
+    bottom: -170px;
+    width: 30%;
+    height: 30%;
     margin-top: 10px; /* Ajusta la separación superior según sea necesario */
+  }
+
+  .deco2:hover {
+    transform: translateX(10px); /* Desplaza la flecha 10px hacia la derecha */
   }
 
   /* Ajustes para HeaderDeco3 */
@@ -156,5 +188,9 @@
     bottom: 10px; /* Ajusta la posición inferior a 10px */
     width: 50px; /* Ajusta el ancho a 50px */
     transform: translateY(0); /* Elimina la transformación vertical */
+  }
+
+  .deco3:hover {
+    transform: translateX(10px); 
   }
 }

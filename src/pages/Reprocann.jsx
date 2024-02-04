@@ -12,10 +12,12 @@ const handleRegulationClick2 = () =>
 
 export default function Reprocann() {
   return (
-    <>
-      <Head>
-        <title>Reprocann</title>
-      </Head>
+     <> <Head>
+      <title>Reprocann</title>
+      <meta name="description" content="Servicios de Club Cannabico" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="icon" href="/logo-final-white.png" />
+    </Head>
       <main className={styles.main}>
         <div className={styles.container}>
           <h1 className={styles.tituloReprocann}>REPROCANN:</h1>

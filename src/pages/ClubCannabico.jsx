@@ -8,7 +8,10 @@ const ClubCannabico = () => {
   return (
     <>
       <Head>
-        <title>Clubes Cannabicos</title>
+        <title>Club Cannabico</title>
+        <meta name="description" content="Servicios de Club Cannabico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/logo-final-white.png" />
       </Head>
       <main className={styles.container}>
         <div className={styles.box1}>
