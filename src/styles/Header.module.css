@@ -50,6 +50,7 @@
 
 /* Estilos para el título centrado */
 .centeredTitle {
+  margin-left: 13rem;
   flex: 1;
   /* Hace que ocupe todo el espacio disponible entre los logos */
   display: flex;
@@ -60,4 +61,100 @@
   /* Centra verticalmente el título */
   margin-right: 200px;
   /* Agrega un margen izquierdo para centrar el título en el contenedor */
+}
+
+
+.login {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.login:hover {
+  animation: blink 1s infinite; /* Aplica la animación solo cuando el mouse está sobre el botón */
+}
+
+@keyframes blink {
+  0%, 49%, 100% {
+    opacity: 1;
+  }
+  50%, 99% {
+    opacity: 0;
+  }
+}
+
+/* Ajustes para HeaderDeco2 */
+.deco2 {
+  transition: transform 0.3s ease;
+  position: absolute;
+  top: 100%; /* Coloca el HeaderDeco2 por debajo del título */
+  margin-top: 160px; /* Ajusta la separación según sea necesario */
+  left: 0;
+  width: 100%; /* Ajusta el ancho al 100% del contenedor */
+  height: 20px; /* Ajusta el alto según sea necesario */
+}
+
+.deco2:hover {
+  transform: translateX(10px); /* Desplaza la flecha 10px hacia la derecha */
+}
+
+/* Ajustes para HeaderDeco3 */
+.deco3 {
+  transition: transform 0.3s ease;
+  position: absolute;
+  top: 180%; /* Ajusta la posición vertical al centro del contenedor */
+  right: 10rem;
+  width: 200px; /* Ajusta el ancho al 100% del contenedor */
+  height: auto; /* Ajusta el alto automáticamente */
+  transform: translateY(-50%); /* Centra verticalmente con respecto al 50% */
+}
+
+.deco3:hover {
+  transform: translateX(10px); /* Desplaza la flecha 10px hacia la derecha */
+}
+
+@media (max-width: 640px) {
+  .logoContainer {
+    flex-direction: column; /* Cambia a disposición de columna en dispositivos más pequeños */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+
+  }
+
+  /* Ajustes para los logos */
+  .logo {
+    margin-bottom: 10px; /* Ajusta el margen inferior entre los logos */
+  }
+
+  /* Ajustes para la flecha */
+  .logoFlecha {
+    margin-top: 0; /* Elimina el margen superior */
+    margin-left: 0; /* Elimina el margen izquierdo */
+    position: static; /* Cambia la posición a estática para seguir el flujo del documento */
+  }
+
+  .centeredTitle {
+    padding-right: 100px;
+    margin-right: 10rem;
+    margin-left: 10rem;
+    width: 50%; /* Ajusta el ancho a 50px */
+    height: 50%;
+  }
+
+  /* Ajustes para HeaderDeco2 */
+  .deco2 {
+    margin-top: 10px; /* Ajusta la separación superior según sea necesario */
+  }
+
+  /* Ajustes para HeaderDeco3 */
+  .deco3 {
+    top: auto; /* Elimina la posición superior automática */
+    right: 10px; /* Ajusta la posición derecha a 10px */
+    bottom: 10px; /* Ajusta la posición inferior a 10px */
+    width: 50px; /* Ajusta el ancho a 50px */
+    transform: translateY(0); /* Elimina la transformación vertical */
+  }
 }

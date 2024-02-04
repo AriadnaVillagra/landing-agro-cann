@@ -3,15 +3,16 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center; /* Centra verticalmente */
   align-items: center;
   padding: 5px;
   min-height: 100vh;
 }
 
-/* Agrega estilos específicos para el formulario */
 .formContainer {
-  margin-top: 300px;
+  margin: auto;  /* Centra horizontalmente */
+  margin-top: 250px; /* Ajusta el margen superior para centrar verticalmente */
+  margin-bottom: 20px;
   max-width: 600px;
   width: 100%;
   padding: 20px;
@@ -62,9 +63,72 @@
   margin-bottom: 10px;
 }
 
-/* Media queries para ajustar estilos en dispositivos más pequeños */
+.questionRow {
+  display: flex;
+  flex-wrap: wrap; /* Asegura que las preguntas y respuestas se envuelvan a la siguiente línea si no hay suficiente espacio */
+  gap: 16px; /* Espaciado entre preguntas y respuestas */
+}
+
+/* Estilos para cada pregunta individual */
+.question {
+  flex: 1;
+}
+
+/* Estilos para cada respuesta individual */
+.answer {
+  flex: 1;
+}
+
+/* Estilos para el contenedor de éxito */
+.successContainer {
+  margin: auto;
+  margin-top: 300px;  /* Ajusta este valor según sea necesario */
+  padding: 10px;
+  background-color: #00FE7F;  /* Color verde para mensajes de éxito */
+  color: white;
+  border: 1px solid #00FE7F;
+  border-radius: var(--border-radius);
+  text-align: center;
+  color: black;
+}
+
+/* Estilos para el contenedor de errores */
+.errorContainer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f44336;
+  color: white;
+  border: 1px solid #f44336;
+  border-radius: var(--border-radius);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos para el contenedor de mensajes */
+.messageContainer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #00FEFE;
+  color: white;
+  border: 1px solid #00FEFE;
+  border-radius: var(--border-radius);
+}
+
 @media (max-width: 700px) {
   .formContainer {
-    max-width: 100%;
+    max-width: 70%;
+    margin-top:50rem; /* Ajusta el margen superior para centrar verticalmente */
+  }
+
+  .formContainer button {
+    width: 100%;
+  }
+
+  .questionRow {
+    flex-direction: column;
   }
 }
