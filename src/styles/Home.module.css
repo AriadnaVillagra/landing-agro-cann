@@ -37,32 +37,18 @@
   }
 }
 
-/* Tablet y Desktop Pequeñas */
-@media (min-width: 601px) and (max-width: 1120px) {
-  .grid {
-    grid-template-columns: repeat(2, 50%);
-  }
-}
-
-/* Ajustes adicionales según tus necesidades */
-
-@media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
+@media (max-width: 700px) {
+  .formContainer {
+    max-width: 100%;
+    margin-top: 150px; /* Ajusta el margen superior para centrar verticalmente */
   }
 
-  .logo,
-  .thirteen img {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+  .formContainer button {
+    width: 100%; /* Ajusta el ancho del botón al 100% en dispositivos más pequeños */
   }
-}
 
-@keyframes rotate {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
+  .questionRow {
+    flex-direction: column; /* Cambia a disposición de columna en lugar de fila para preguntas y respuestas */
   }
 }
 

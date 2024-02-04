@@ -2,35 +2,42 @@
 body, html {
   margin: 0;
   padding: 0;
-  overflow-y: auto; /* Habilita el scroll vertical en todas las páginas */
+  overflow-y: auto; 
   overflow-x: hidden;
-  height: 100%; /* Asegura que el cuerpo y el html ocupen el 100% de la altura */
+  height: 100%;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Asegura que el cuerpo ocupa al menos el 100% de la altura de la ventana */
-  background-image: url('/background.jpg'); /* Ruta a la imagen JPG en la carpeta public */
-  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
-  background-repeat: no-repeat; /* Evita que la imagen se repita en el fondo */
-  font-family: 'Antonio', sans-serif; /* Utiliza el nombre que asignaste a tu fuente */
+  min-height: 100vh;
+  background-image: url('/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Antonio', sans-serif;
+  margin: 0; /* Elimina el margen predeterminado del cuerpo */
 }
 
 #__next {
-  flex: 1; /* Este div se expandirá para ocupar todo el espacio restante */
+  flex: 1;
 }
 
-/* Estilos generales para pantallas más grandes */
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Estilos específicos para pantallas más pequeñas */
-@media (max-width: 768px) {
-  .container {
+@media (max-width: 700px) {
+  .formContainer {
     max-width: 100%;
-    padding: 0 10px; /* O ajusta el padding según sea necesario */
+    margin-top: 150px; /* Ajusta el margen superior para centrar verticalmente */
+  }
+
+  .formContainer button {
+    width: 100%; /* Ajusta el ancho del botón al 100% en dispositivos más pequeños */
+  }
+
+  .questionRow {
+    flex-direction: column; /* Cambia a disposición de columna en lugar de fila para preguntas y respuestas */
   }
 }

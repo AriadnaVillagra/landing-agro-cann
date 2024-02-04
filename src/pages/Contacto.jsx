@@ -1,71 +1,126 @@
-import React, { useState } from 'react';
+// ContactoForm.jsx
+
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 import Head from 'next/head';
 import styles from '../styles/Contacto.module.css';
 
-export default function Contacto() {
-  const [nombre, setNombre] = useState('');
-  const [apellido, setApellido] = useState('');
-  const [email, setEmail] = useState('');
-  const [mensaje, setMensaje] = useState('');
+function ContactoForm() {
+  const [state, handleSubmit] = useForm("moqgewyo");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Formulario enviado');
-  
-    // Agrega logs para rastrear el flujo del código
-    console.log('Antes de construir el objeto de datos');
-  
-    const cuerpoCorreo = `
-      Nombre: ${nombre}
-      Apellido: ${apellido}
-      Email: ${email}
-      Mensaje: ${mensaje}
-    `;
-  
-    const subject = `Consulta desde el formulario de contacto - ${email}`;
-    const mailtoLink = `mailto:agro.cann.ig@gmail.com?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(cuerpoCorreo)}`;
-  
-    console.log('Antes de abrir el enlace de correo electrónico');
-  
-    // Intenta cambiar a window.open(mailtoLink) si window.location.href no funciona como esperas
-    window.location.href = mailtoLink;
-  
-    console.log('Después de abrir el enlace de correo electrónico');
-  };
-  
+  if (state.succeeded) {
+    return (
+      <div className={styles.successContainer}>
+        <p>¡Gracias por tu mensaje!</p>
+      </div>
+    );
+  }
 
   return (
-    <>
-      <Head>
-        <title>Contacto</title>
-      </Head>
-      <main className={styles.main}>
-        <form className={styles.formContainer} onSubmit={handleSubmit}>
-          <label>
-            Nombre:
-            <input type="text" value={nombre} onChange={(e) => setNombre(e.target.value)} />
-          </label>
-          <br />
-          <label>
-            Apellido:
-            <input type="text" value={apellido} onChange={(e) => setApellido(e.target.value)} />
-          </label>
-          <br />
-          <label>
-            Email:
-            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-          </label>
-          <br />
-          <label>
-            Mensaje:
-            <textarea value={mensaje} onChange={(e) => setMensaje(e.target.value)} />
-          </label>
-          <br />
-          <button type="submit">Enviar</button>
-        </form>
-      </main>
-    </>
+    <div className={styles.container}>
+    <form onSubmit={handleSubmit} className={styles.formContainer}>
+      <label htmlFor="name">Nombre:</label>
+      <input
+        id="name"
+        type="text"
+        name="name"
+      />
+      <ValidationError
+        prefix="Name"
+        field="name"
+        errors={state.errors}
+      />
+
+      <label htmlFor="surname">Apellido:</label>
+      <input
+        id="surname"
+        type="text"
+        name="surname"
+      />
+      <ValidationError
+        prefix="Surname"
+        field="surname"
+        errors={state.errors}
+      />
+
+      <label htmlFor="email">Email:</label>
+      <input
+        id="email"
+        type="email"
+        name="email"
+      />
+      <ValidationError
+        prefix="Email"
+        field="email"
+        errors={state.errors}
+      />
+
+      <label htmlFor="message">Mensaje:</label>
+      <textarea
+        id="message"
+        name="message"
+      />
+      <ValidationError
+        prefix="Message"
+        field="message"
+        errors={state.errors}
+      />
+
+ {/* Nueva fila para preguntas y respuestas */}
+ <div className={styles.questionRow}>
+      {/* Pregunta sobre "reprocann" */}
+      <div className={styles.question}>
+        <label htmlFor="reprocann">
+          ¿Tenés Reprocann?
+        </label>
+      </div>
+      <div className={styles.answer}>
+        <select id="reprocann" name="reprocann">
+          <option value="si">Sí</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+
+      {/* Pregunta sobre la edad */}
+      <div className={styles.question}>
+        <label htmlFor="edad">
+          ¿Sos mayor de edad?
+        </label>
+      </div>
+      <div className={styles.answer}>
+        <select id="edad" name="edad">
+          <option value="si">Sí</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+    </div>
+
+      {/* Botón de envío */}
+      <button type="submit" disabled={state.submitting}>
+        Enviar
+      </button>
+      
+     {/* Contenedor para mostrar mensajes */}
+     {state.submitting && (
+          <div className={styles.messageContainer}>
+            <p>Enviando mensaje...</p>
+          </div>
+        )}
+
+        {state.succeeded && (
+          <div className={styles.successContainer}>
+            <p>¡Gracias por tu mensaje!</p>
+          </div>
+        )}
+
+        {state.errors && (
+          <div className={styles.errorContainer}>
+            <p>Hubo un problema al enviar el mensaje. Por favor, inténtalo de nuevo.</p>
+          </div>
+        )}
+      </form>
+    </div>
   );
 }
+
+export default ContactoForm;

@@ -86,17 +86,27 @@
   transform: scale(1.1);
 }
 
-/* Estilos para la versión móvil (max-width: 640px) */
+
+/* Agrega estilos para la versión móvil (max-width: 640px) */
 @media (max-width: 640px) {
-  .menu {
-    display: block;
+  .navbar-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
   }
 
-  .navbar-left ul {
-    display: none;
+  .navbar-buttons li {
+    margin: 12px 0;
   }
 
-  .navbar-email {
-    display: none;
+  .nav-button1,
+  .nav-button2,
+  .nav-button3,
+  .nav-button4,
+  .nav-button5,
+  .nav-button6 {
+    width: 100%;
   }
+
+  /* ... Otros ajustes para dispositivos más pequeños ... */
 }
