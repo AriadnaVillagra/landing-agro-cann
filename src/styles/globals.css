@@ -14,7 +14,7 @@ body {
   background-image: url('/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: 'Antonio', sans-serif;
+  font-family: 'Antonio';
   margin: 0; /* Elimina el margen predeterminado del cuerpo */
 }
 
