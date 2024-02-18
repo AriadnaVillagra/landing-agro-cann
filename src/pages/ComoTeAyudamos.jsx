@@ -30,18 +30,20 @@ export default function ComoTeAyudamos() {
 
           <p className={styles.teAyudamosText}>Te ayudamos con lo que necesitas</p>
         </div>
-        <div className={styles.recuadro2}>
-          <Image src="/ComoTeAyudamos.jpg" width={641} height={431} alt="Imagen de marihuana" />
-        </div>
-        <div className={styles.recuadro3}>
-          <ul className={styles.recuadro3Text}>
-            <li>Cultivo vegetativo</li>
-            <li>Floración y Esquejes</li>
-            <li>Secado</li>
-            <li>Manipulación y Trimming</li>
-            <li>Cuidado y reproducción</li>
-            <li>Guardia y custodia</li>
-          </ul>
+        <div className={styles.recuadroContainer}>
+          <div className={styles.recuadro2}>
+            <Image src="/ComoTeAyudamos.jpg" width={641} height={431} alt="Imagen de marihuana" />
+          </div>
+          <div className={styles.recuadro3}>
+            <ul className={styles.recuadro3Text}>
+              <li>Cultivo vegetativo</li>
+              <li>Floración y Esquejes</li>
+              <li>Secado</li>
+              <li>Manipulación y Trimming</li>
+              <li>Cuidado y reproducción</li>
+              <li>Guardia y custodia</li>
+            </ul>
+          </div>
         </div>
         <div className={styles.recuadro4}>
           <p className={styles.recuadro4Text}>
@@ -52,6 +54,7 @@ export default function ComoTeAyudamos() {
           </p>
         </div>
       </main>
+
     </>
   );
 }

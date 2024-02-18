@@ -7,31 +7,55 @@
   align-items: center;
   padding: 20px; /* Ajusta según sea necesario */
   min-height: 100vh;
+  max-width: 1200px; /* Ancho máximo del contenedor principal */
+  margin: 0 auto; /* Centra horizontalmente el contenedor principal */
 }
 
 .comoTeAyudamosSection {
-  background-color: #624fc6;
-  /* Otros estilos específicos para la sección */
+  display: flex; /* Utiliza el modelo de caja flexible */
+  justify-content: center; /* Centra los elementos horizontalmente */
 }
 
 .recuadro1 {
-  width: 100%;
-  height: 974px;
-  margin-top: 300px; /* Ajusta el margen superior según sea necesario */
+  width: calc(110%);
+  height: 270px;
+  margin-top: 300px;
   position: relative;
   border: 3px solid #000;
   color: #fff;
-  background-color: #fff; /* Fondo blanco */
+  background-color: #fff;
+  text-align: center; /* Centra horizontalmente el texto */
+  display: flex;
+  flex-direction: column; /* Alinea verticalmente los elementos */
+  justify-content: center; /* Centra verticalmente los elementos */
+}
+
+.serviciosTitle {
+  font-family: Antonio, sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 62px;
+  letter-spacing: 0em;
+  color: #2A8500; /* Color del texto */
+}
+
+.teAyudamosText {
+  font-family: Antonio, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  color: #2A8500; /* Color del texto */
+  margin-top: 20px; /* Espacio entre los elementos */
 }
 
 .decoracionIzquierda {
   position: absolute;
   width: 481px;
   height: 159.16px;
-  top: 50%;
-  left: 10%;
+  top: 20%;
+  left: 29%;
   margin-top: 300x; /* La mitad de la altura para centrarlo */
-  border: 1px solid #000;
 }
 
 .decoracionDerecha {
@@ -46,96 +70,122 @@
 }
 
 .serviciosTitle {
-  font-family: Antonio;
+  font-family: Antonio, sans-serif !important;
   font-size: 48px;
   font-weight: 400;
   line-height: 62px;
   letter-spacing: 0em;
-  text-align: left;
-  position: absolute;
+  text-align: center;
+  position: center;
   top: 40%;
   left: 20%;
+  color: #2A8500; /* Color del texto */
 }
 
 .teAyudamosText {
-  font-family: Antonio;
+  font-family: Antonio, sans-serif !important;
   font-size: 20px;
   font-weight: 400;
   line-height: 26px;
   letter-spacing: 0em;
-  text-align: left;
-  position: absolute;
+  text-align: center;
+  position: center;
   top: 50%;
   left: 20%;
+  color: #2A8500; /* Color del texto */
+}
+
+.recuadroContainer {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor */
 }
 
 .recuadro2,
 .recuadro3 {
-  width: 48%; /* Ajusta según sea necesario */
+  width: 641px;
   height: 431px;
   border: 3px solid #000;
   margin-top: 20px;
-  display: inline-block; /* Para que estén en la misma línea */
+  margin-left: 3px; /* Agrega un margen izquierdo entre los recuadros */
+  display: flex; /* Utiliza flexbox para alinear verticalmente el contenido */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  position: relative; /* Establece posición relativa */
 }
 
-.recuadro2 {
-  margin-left: 2%; /* Ajusta el margen izquierdo para separar los recuadros */
+.recuadro3Text {
+  font-family: Antonio, sans-serif !important;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 20px;
+  color: #27F747;
+  overflow: auto; /* Agrega scroll si el contenido es demasiado largo */
 }
 
-.recuadro3 {
-  background-color: #624fc6; /* Fondo violeta */
-  color: #fff;
+.recuadro3::before {
+  content: ''; /* Crea un pseudo-elemento */
+  position: absolute; /* Establece posición absoluta */
+  top: 0;
+  left: 0;
+  width: 100%; /* Extiende el fondo por todo el ancho */
+  height: 100%; /* Extiende el fondo por toda la altura */
+  background-color: #624fc6; /* Color de fondo */
+  z-index: -1; /* Coloca el fondo detrás del contenido */
 }
 
 .recuadro3 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  background-color: #624fc6;
 }
 
 .recuadro3 li {
   margin-bottom: 10px;
 }
 
-.recuadro3Text {
-  font-family: Antonio;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 52px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-
 .recuadro4 {
-  width: 100%;
+  width: calc(110%); /* Resta 20px para los márgenes, bordes y rellenos */
   height: 310px;
   border: 3px solid #000;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 10px;
-  color: #fff;
+  height: auto; /* Cambiar a altura automática para que se ajuste al contenido */
+  color: #ffffff;
+  background: #ffffff; /* Fondo del recuadro */
 }
 
 .recuadro4Text {
-  font-family: Antonio;
+  font-family: Antonio, sans-serif !important;
   font-size: 24px;
   font-weight: 400;
   line-height: 31px;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: justify; /* Texto justificado */
+  background: #ffffff;
+  color: #2A8500; /* Color del texto */
 }
 
+/* Agrega un media query para dispositivos con un ancho máximo de 700px */
 @media (max-width: 700px) {
-  .formContainer {
-    max-width: 100%;
-    margin-top: 150px; /* Ajusta el margen superior para centrar verticalmente */
+  .recuadro1,
+  .recuadro2,
+  .recuadro3,
+  .recuadro4 {
+    width: 90%; /* Establece el ancho al 90% para ocupar la mayor parte del ancho disponible */
+    max-width: 90%; /* Establece el ancho máximo al 90% para que los recuadros no se ensanchen más allá del 90% del ancho de la pantalla */
+    margin-left: 5%; /* Alinea los recuadros al centro */
+    margin-right: 5%; /* Alinea los recuadros al centro */
+    font-size: 14px; /* Redefine el tamaño de la fuente para hacerlo más pequeño y legible */
+    padding: 10px; /* Ajusta el relleno para mejorar la apariencia */
   }
 
-  .formContainer button {
-    width: 100%; /* Ajusta el ancho del botón al 100% en dispositivos más pequeños */
-  }
-
-  .questionRow {
-    flex-direction: column; /* Cambia a disposición de columna en lugar de fila para preguntas y respuestas */
+  .recuadro3Text {
+    font-size: 12px; /* Ajusta el tamaño de la fuente para hacerlo más pequeño y legible */
+    line-height: 18px; /* Ajusta la altura de línea para mejorar la legibilidad */
   }
 }
