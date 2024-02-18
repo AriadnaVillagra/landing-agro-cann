@@ -1,6 +1,7 @@
 /* Contacto.module.css */
 
 .main {
+  font-family: 'Antonio', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center; /* Centra verticalmente */

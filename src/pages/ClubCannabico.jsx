@@ -13,16 +13,16 @@ const ClubCannabico = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo-final-white.png" />
       </Head>
-      <main className={styles.container}>
+      <div className={styles.container}>
         <div className={styles.box1}>
           <Image src="/ComoTeAyudamosDeco1.svg" alt="Decoración 1" className={styles.deco1} width={50} height={50} />
           <h1>Clubes Cannabicos</h1>
         </div>
         <div className={styles.box2}>
-          <Image src="/ClubesCannabicosCirculo.svg" alt="Círculo" className={styles.image} width={50} height={50}/>
-          <Image src="/ClubesCannabicosCuadrado.svg" alt="Cuadrado" className={styles.image} width={50} height={50}/>
-          <Image src="/ClubesCannabicosTriangulo.svg" alt="Triángulo" className={styles.image}width={50} height={50} />
-          <p>
+          <Image src="/ClubesCannabicosCirculo.svg" alt="Círculo" className={styles.circle} width={100} height={100}/>
+          <Image src="/ClubesCannabicosCuadrado.svg" alt="Cuadrado" className={styles.square} width={70} height={70}/>
+          <Image src="/ClubesCannabicosTriangulo.svg" alt="Triángulo" className={styles.triangle}width={70} height={70} />
+          <p className={styles.description}>
             En Argentina el cultivo de cannabis para sí o para terceros existe desde hace años.
             La Ley 27.350 de Cannabis Medicinal y sus actualizaciones, toman como eje central la
             necesidad de las personas de abastecerse de cannabis como un derecho a la salud integral.
@@ -33,24 +33,25 @@ const ClubCannabico = () => {
           </p>
         </div>
         <div className={styles.box3}>
-          <Image src="/ClubesCannabicosDeco1.svg" alt="Decoración 1" className={styles.deco1} width={50} height={50}/>
-          <p>
+          <Image src="/ClubesCannabicosDeco1.svg" alt="Decoración 1" className={styles.decoration1} width={50} height={50}/>
+          <Image src="/ClubesCannabicosDeco2.svg" alt="Decoración 2" className={styles.decoration2} width={50} height={50} />
+          <p className={styles.description}>
             Los clubes de cultivo en Argentina están representados por estos derechos que otorga la Ley.
             Producimos cannabis para terceros, quienes a través del Registro, son socios y socias de nuestro
             club de cultivo.
           </p>
         </div>
         <div className={styles.box4}>
-          <Image src="/ClubesCannabicosCosecha.svg" alt="Cosecha" className={styles.image} width={50} height={50} />
-          <p>
+          <Image src="/ClubesCannabicosCosecha.svg" alt="Cosecha" className={styles.cosecha} width={240} height={240} />
+          <p className={styles.description}>
             La Ley 27350 permite a los cultivadores solidarios, brindarles un servicio donde los socios cubren los costos del funcionamiento integral del Club.
             Como persona jurídica (ONG) una asociación civil puede emitir remuneraciones para personal que realiza tareas variadas dentro del cultivo.
             Para establecer los compromisos monetarios (cuota que paga el socio frente a costo de producción) se confeccionan contratos que rigen esta relación y establecen sus condiciones.
             Conociendo la Ley podés organizarte para producir cannabis para usuarios y usuarias registrados.  
           </p>
-          <Image src="/ClubesCannabicosDeco2.svg" alt="Decoración 2" className={styles.deco2} width={50} height={50} />
+        
         </div>
-      </main>
+      </div>
     </>
   );
 };
